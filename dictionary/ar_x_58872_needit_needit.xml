@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Archive NeedIt" max_length="40" name="ar_x_58872_needit_needit" type="collection">
+        <element label="Active" max_length="3" name="active" type="boolean"/>
+        <element label="Activity due" max_length="19" name="activity_due" type="due_date"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Additional assignee list" max_length="16777215" name="additional_assignee_list" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Approval" max_length="40" name="approval" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Approval history" max_length="16777215" name="approval_history" type="journal"/>
+        <element label="Approval set" max_length="19" name="approval_set" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" dependent="assignment_group" label="Assigned to" max_length="151" name="assigned_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Assignment group" max_length="80" name="assignment_group" type="string"/>
+        <element label="Business duration" max_length="19" name="business_duration" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="Business service" max_length="255" name="business_service" type="string"/>
+        <element label="Calendar duration" max_length="19" name="calendar_duration" type="glide_duration"/>
+        <element label="Closed at" max_length="19" name="closed_at" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Closed by" max_length="151" name="closed_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Close notes" max_length="16777215" name="close_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="company" label="CMDB CI" max_length="255" name="cmdb_ci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="16777215" name="comments" type="journal_input"/>
+        <element dependent="comments,work_notes" label="Comments and work notes" max_length="16777215" name="comments_and_work_notes" type="journal_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Company" max_length="80" name="company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact type" max_length="40" name="contact_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation display" max_length="100" name="correlation_display" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation ID" max_length="100" name="correlation_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery plan" max_length="100" name="delivery_plan" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery task" max_length="100" name="delivery_task" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="16777215" name="description" type="string"/>
+        <element label="Due date" max_length="19" name="due_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Escalation" max_length="100" name="escalation" type="string"/>
+        <element label="Expected start" max_length="19" name="expected_start" type="glide_date_time"/>
+        <element label="Follow up" max_length="19" name="follow_up" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Group list" max_length="16777215" name="group_list" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Impact" max_length="100" name="impact" type="string"/>
+        <element label="Knowledge" max_length="3" name="knowledge" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" dependent="company" label="Location" max_length="100" name="location" type="string"/>
+        <element label="Made SLA" max_length="3" name="made_sla" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="New field 1" max_length="40" name="new_field_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Opened at" max_length="19" name="opened_at" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Opened by" max_length="151" name="opened_by" type="string"/>
+        <element label="Order" max_length="10" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="40" name="parent" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Priority" max_length="100" name="priority" type="string"/>
+        <element label="Reassignment count" max_length="10" name="reassignment_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Rejection goto" max_length="40" name="rejection_goto" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="160" name="short_description" type="string"/>
+        <element label="SLA due" max_length="19" name="sla_due" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="100" name="state" type="string"/>
+        <element default="javascript:gs.nowDateTime()" label="Archived" max_length="40" name="sys_archived" type="glide_date_time"/>
+        <element label="Archive restored" max_length="40" name="sys_archive_restored" type="glide_date_time"/>
+        <element label="Sys domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element label="Time worked" max_length="19" name="time_worked" type="timer"/>
+        <element attributes="edge_encryption_enabled=true" label="Upon approval" max_length="40" name="upon_approval" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Upon reject" max_length="40" name="upon_reject" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Urgency" max_length="100" name="urgency" type="string"/>
+        <element label="User input" max_length="16777215" name="user_input" type="user_input"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for" max_length="151" name="u_requested_for" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" max_length="40" name="u_requested_for_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Request type" max_length="80" name="u_request_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="What needed" max_length="40" name="u_what_needed" type="string"/>
+        <element label="When needed" max_length="19" name="u_when_needed" type="glide_date_time"/>
+        <element label="Variables" max_length="40" name="variables" type="variables"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Watch list" max_length="16777215" name="watch_list" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Wf activity" max_length="100" name="wf_activity" type="string"/>
+        <element label="Work end" max_length="19" name="work_end" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Work notes" max_length="16777215" name="work_notes" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Work notes list" max_length="16777215" name="work_notes_list" type="glide_list"/>
+        <element label="Work start" max_length="19" name="work_start" type="glide_date_time"/>
+        <index name="index">
+            <element name="number"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index3">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>
